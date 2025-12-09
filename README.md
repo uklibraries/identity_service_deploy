@@ -16,7 +16,7 @@ For best experience, deploy with an appropriate [Ansible playbook](https://githu
 Install and extract the repo:
 
 ```
-git clone git@github.com:uklibraries/identity_service_deploy.git
+git clone https://github.com:uklibraries/identity_service_deploy.git
 cd identity_service_deploy
 rm -rf .git
 ```
