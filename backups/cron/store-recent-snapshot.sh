@@ -21,5 +21,5 @@ if [[ -L backups/data/external-snapshot.sql && -e $(readlink -f backups/data/ext
 
     # store recent backup
     cd /home/deploy/services/identity
-    rsync -aq backups/data/external-snapshot.sql "$snapshots/iddatabase.sql.0"
+    rsync -aq $(readlink -f backups/data/external-snapshot.sql) "$snapshots/iddatabase.sql.000"
 fi
