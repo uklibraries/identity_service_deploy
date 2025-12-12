@@ -11,6 +11,6 @@ day=$(date '+%d')
 today="${year}-${month}-${day}"
 
 snapshots="$BACKUPS_DIR/snapshots"
-archive="$BACKUPS_DIR/$year/$month"
+archive="$BACKUPS_DIR/archive/$year/$month"
 mkdir -p "$archive"
 rsync -aq "$snapshots/iddatabase.sql.000" "$archive/iddatabase-${today}.sql"
