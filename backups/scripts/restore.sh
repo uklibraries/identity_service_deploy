@@ -13,3 +13,6 @@ else
         psql -U iduser -d iddatabase -f /backups/migrate.sql
     fi
 fi
+
+# Adjust counters
+psql -U iduser -d iddatabase -f /backups/adjust-counters.sql
