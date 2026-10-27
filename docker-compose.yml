@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:17-bookworm
+    image: postgres:17-trixie
     pre_stop:
       - command: /bin/bash /backups/take-snapshot.sh
     container_name: postgres-db
@@ -48,7 +48,7 @@ services:
       - ./.env
 
   frontend-proxy:
-    image: nginx:1.29
+    image: nginx:1.30
     networks:
       - app-network
     ports:
